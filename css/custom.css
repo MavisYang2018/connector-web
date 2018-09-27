@@ -1,0 +1,125 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+.bgLine {
+  position: absolute;
+  opacity: .2;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.menuBox {
+  padding: 5vh 10vw;
+  display: inline-block;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #767676;
+  cursor: pointer;
+  margin-right: 20px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.item-name {
+  display: inline-block;
+}
+
+#itemSselect1, #itemSselect2, #itemSselect3, #itemSselect4, #itemSselect5, #itemSselect6 {
+  display: block;
+}
+
+.menu-list > li {
+  cursor: pointer;
+  width: 400px;
+  height: 30px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.menu-list > li:hover .item-name {
+  color: #D8D8D8;
+  font-weight: 800;
+}
+
+.menu-list > li:hover .circle {
+  width: 20px;
+  background-color: #E73951;
+}
+
+.menu-list > li > .item-name {
+  text-decoration: none;
+  color: #767676;
+  letter-spacing: 1.2px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.item-name-onClick {
+  color: #E73951;
+  letter-spacing: 1.2px;
+  font-weight: 800;
+  display: inline-block;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.galleryBox {
+  padding: 20px 20px 100px 100px;
+}
+
+.mainImg {
+  width: 200px;
+  height: 200px;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100%;
+  padding: 0;
+  -webkit-animation: enter 1s;
+          animation: enter 1s;
+}
+
+.mainImg2 {
+  width: 100px;
+  height: 100px;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100%;
+  padding: 0;
+  -webkit-animation: enter 1s 0.5s;
+          animation: enter 1s 0.5s;
+}
+
+@-webkit-keyframes enter {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+}
+/*# sourceMappingURL=custom.css.map */
